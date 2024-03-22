@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import {StyledBtn, SuperButton} from './components/StyledBtn.styled';
+import {StyledBtn} from './components/StyledBtn.styled';
 import {Link} from './components/Link.styled';
 import {Menu} from './components/Menu.styled';
+import {myTheme} from './styles/Theme.styled';
 
 function App() {
     return (
@@ -32,7 +33,7 @@ function App() {
 export default App;
 const Box = styled.div`
   display: flex;
-  height: 100vh;
+  height: 50vh;
   background-color: bisque;
   justify-content: center;
   align-items: center;
@@ -46,7 +47,7 @@ const Box = styled.div`
     cursor: zoom-in;
   }
 
-  @media screen and (max-width: 800px) {
+  @media ${myTheme.media.tablet} {
     flex-direction: column;
   }
 `
