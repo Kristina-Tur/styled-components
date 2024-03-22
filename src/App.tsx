@@ -21,8 +21,8 @@ function App() {
                 <SuperButton>SuperButton</SuperButton>
                 <StyledBtn as="a" href={"#"}>Hello</StyledBtn>
                 <StyledBtn as={Link} href={"#"}>Hello</StyledBtn>*/}
-                    <StyledBtn primary>Hello</StyledBtn>
-                    <StyledBtn outlined>Hello</StyledBtn>
+                    <StyledBtn typeBtn={'primary'} active >Hello</StyledBtn>
+                    <StyledBtn typeBtn={'outlined'} >Hello</StyledBtn>
 
             </Box>
         </div>
